@@ -16,6 +16,16 @@ COPY index.js /opt/arena/
 
 FROM base
 
+ARG VCS_REF
+ARG VERSION
+ARG BUILD_DATE
+
+LABEL org.label-schema.vcs-ref="$VCS_REF" \
+      org.label-schema.vcs-url="https://github.com/ratehub/arena-rh"\
+      org.label-schema.build-date="$BUILD_DATE"\
+      org.label-schema.version="$VERSION"\
+      org.label-schema.description="Arena for Bee Queue"
+
 COPY --from=build /opt/arena/ .
 RUN chmod -R og+r .
 
