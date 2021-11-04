@@ -27,7 +27,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm ci
+      - run: npm ci --no-optional
       - run: npm run ci --if-present
       - name: Commitlint
         run: npm run ci:commitlint --if-present
