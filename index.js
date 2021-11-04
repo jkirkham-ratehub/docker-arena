@@ -1,6 +1,6 @@
 const Arena = require('bull-arena');
 
-const ARENA_CONFIG_FILE = process.env.ARENA_CONFIG_FILE || './index.json'
+const ARENA_CONFIG_FILE = process.env.ARENA_CONFIG_FILE || './index.json';
 
 let config;
 try {
