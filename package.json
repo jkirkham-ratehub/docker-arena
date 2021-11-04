@@ -2,7 +2,7 @@
   "name": "docker-arena",
   "private": true,
   "main": "index.js",
-  "version": "0.0.0",
+  "version": "3.29.3",
   "description": "The official docker application for bee-queue arena.",
   "scripts": {
     "build": "docker build . -t docker-arena",
@@ -24,11 +24,11 @@
   "author": "Eli Skeggs <eli@mixmax.com> (https://mixmax.com)",
   "license": "MIT",
   "dependencies": {
-    "bee-queue": "^1.3.1",
-    "bull": "^3.20.0",
-    "bull-arena": "^3.6.1",
-    "bullmq": "^1.11.0",
-    "nodemon": "^2.0.6"
+    "bee-queue": "^1.4.0",
+    "bull": "^4.1.0",
+    "bull-arena": "^3.29.3",
+    "bullmq": "^1.51.3",
+    "nodemon": "^2.0.7"
   },
   "repository": "https://github.com/bee-queue/docker-arena.git",
   "devDependencies": {
